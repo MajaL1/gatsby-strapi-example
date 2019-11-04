@@ -25,7 +25,16 @@
       "via": "related",
       "plugin": "upload"
     },
-    "user": {
+    "admin_layout": {
+      "required": true,
+      "enum": [
+        "admin",
+        "author",
+        "editor"
+      ],
+      "type": "enumeration"
+    },
+    "author": {
       "model": "user",
       "via": "articles",
       "plugin": "users-permissions"
